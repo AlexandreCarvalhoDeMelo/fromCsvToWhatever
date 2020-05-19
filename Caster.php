@@ -11,6 +11,7 @@ date_default_timezone_set('UTC');
  *
  * @Todo: Implement factory pattern, get namespaces from composer
  * @Todo: Implement locks system allowing concurrent writing
+ * @Todo: needs BOM and spreasheet delimiter configs
  */
 use CastorCaster\Resources\ConfigurationJson as ConfigFile;
 use CastorCaster\Resources\FileSystem as FileSystemLoader;
