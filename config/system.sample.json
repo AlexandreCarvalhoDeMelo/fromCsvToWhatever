@@ -1,0 +1,15 @@
+{
+  "options": {
+    "default_writer": "default writer class",
+    "default_mapper": "default mapper class"
+  },
+  "readers": {
+    "Reader class should be here": {
+      "mime_types": [
+        "mime types to map here"
+      ],
+      "writer": "(optional) you can change the default class writer at run time",
+      "mapper": "(optional) you can change the mapper class writer at run time"
+    }
+  }
+}

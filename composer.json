@@ -1,0 +1,13 @@
+{
+  "name": "castoredcx/caster",
+  "license": "private",
+  "description": "A open source stream transformer with a inferiority complex (:",
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "CastorCaster\\": "src/"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id field here": "id field in the file",
+  "another field this one has transformations that's why he's an object": {
+    "field": "id field in the file",
+    "transformers": {
+      "first_transform (transformers names gotta be snake_case, it will be coverted)": {
+        "A very nice param": "Wow what a nice param!",
+        "Another nice param": "Wow now we got 2"
+      },
+      "replace_string": {
+        "search": "Wow",
+        "replace": "good"
+      }
+    }
+  }
+}

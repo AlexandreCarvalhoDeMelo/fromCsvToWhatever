@@ -1,0 +1,40 @@
+{
+  "id": "IDNUMBER",
+  "name": {
+    "field": "CARDNAME",
+    "transformers": {
+      "replace_string": {
+        "search": "mr. ",
+        "replace": ""
+      }
+    }
+  },
+  "store_credit": {
+    "field": "TOTALSPENT",
+    "description": "Client has 5 coins credit",
+    "transformers": {
+      "basicMath": {
+        "operation": "add",
+        "factor": "5"
+      }
+    }
+  },
+  "discount_alert": {
+    "field": "DISCOUNTALERT",
+    "transformers": {
+      "boolean_from_string": {
+        "0": "off",
+        "1": "on"
+      }
+    }
+  },
+  "last_login": {
+    "field": "LOGGEDON",
+    "transformers": {
+      "change_date_format": {
+        "from": "d-m-Y",
+        "to": "Y-m-d"
+      }
+    }
+  }
+}

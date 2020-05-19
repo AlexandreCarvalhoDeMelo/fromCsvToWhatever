@@ -1,0 +1,49 @@
+{
+  "record_id": "Patient ID",
+  "gender": {
+    "field": "Gender",
+    "transformers": {
+      "number_from_string": {
+        "1": "Male",
+        "2": "Female"
+      }
+    }
+  },
+  "height_cm": {
+    "field": "Length",
+    "transformers": {
+      "replace_string": {
+        "search": ".",
+        "replace": ""
+      }
+    }
+  },
+  "weight_kg": "Weight",
+  "pregnant": {
+    "field": "Pregnant",
+    "transformers": {
+      "boolean_from_string": {
+        "0": "No",
+        "1": "Yes"
+      }
+    }
+  },
+  "pregnancy_duration_weeks": {
+    "field": "Months Pregnant",
+    "transformers": {
+      "basic_math": {
+        "operation": "multiply",
+        "factor": "4"
+      }
+    }
+  },
+  "date_diagnosis": {
+    "field": "Date of diagnosis",
+    "transformers": {
+      "change_date_format": {
+        "from": "d-m-Y",
+        "to": "Y-m-d"
+      }
+    }
+  }
+}

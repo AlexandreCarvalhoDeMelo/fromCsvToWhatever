@@ -1,0 +1,26 @@
+{
+  "description": "System writers and mappers for each type of processor reader plus default config",
+  "options": {
+    "default_writer": "Csv",
+    "default_mapper": "SimpleArrayMapper"
+  },
+  "readers": {
+    "Csv": {
+      "mime_types": [
+        "text/plain",
+        "text/csv"
+      ]
+    },
+    "Xls": {
+      "mime_types": [
+        "application/vnd.ms-excel"
+      ]
+    },
+    "HttpCsv": {
+      "mime_types": [
+        "text/html"
+      ],
+      "writer": "html"
+    }
+  }
+}
