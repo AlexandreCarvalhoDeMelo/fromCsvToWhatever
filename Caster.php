@@ -77,7 +77,7 @@ try {
     /**
      * Just testing quick transformation
      *
-     * @todo: Remove this from foreach and implement factory pattern by mimeType.
+     * @todo: REMOVE THIS foreach ASAP and implement factory pattern by mimeType.
      */
     foreach ($systemConfig->get('readers') as $readerClass => $readerClassProperties) {
         $foundInputMimeType = in_array($input->getMimeType(), $readerClassProperties['mime_types'], true);
