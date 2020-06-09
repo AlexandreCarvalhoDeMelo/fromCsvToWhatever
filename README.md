@@ -14,19 +14,19 @@ Features:
 * Csv - Reads csv file from file system
 * HttpCsv - Reads csv format from a url
 
-####Mappers:
+#### Mappers:
 * SimpleArrayMapper - does the mapping of one array containing the data 
 using another with the mapping information
 
-####Writers:
+#### Writers:
 * Csv - Writes from array to Csv file
 * Html - Writes from array to valid Html file
 
-### Architecture
+#### Architecture
 ![alt text](architechture.png "Sorry for the lame graphs")
 
 
-### Installation
+#### Installation
 
 Just run composer install:
 ```
@@ -36,7 +36,7 @@ Run
 ```
 php Caster.php input.csv
 ```
-###System configuration
+#### System configuration
 ```
 {
   "options": {
@@ -51,7 +51,7 @@ php Caster.php input.csv
       ]
     }
 ```
-####Description:
+#### Description:
 
 | Item        | Description           |
 | ------------- |:-------------:|
@@ -59,14 +59,14 @@ php Caster.php input.csv
 | default_mapper      | Default mapper class used i.e: "SimpleArrayMapper" or "HttpResourceMapper"|      |
 | readers | List of available reader classes with their configurations   |
 
-#####Reader configurations:
+#### Reader configurations:
 | Item        | Description           |
 | ------------- |:-------------:|
 | mime_types      | An array of mime_types to be mapped by readers|
 | mapper (optional) | You can overwrite the default mapper using this option | 
 | writer (optional)|You can overwrite the default writer using this option |
 
-####Available Readers:
+#### Available Readers:
 * Csv - Reads csv file from file system
 * HttpCsv - Reads csv format from a url
 
@@ -102,8 +102,8 @@ Complex transformation
 | ------------- |:-------------:|
 | transformers      | transformations to be applied to the field|
 
-###Available Transformers:
-####Basic math
+### Available Transformers:
+#### Basic math
 can perfom the following operations **multiply, divide, add ,subtract**
 
 ```
@@ -113,7 +113,7 @@ can perfom the following operations **multiply, divide, add ,subtract**
 }
 ```
 
-####Boolean from string
+#### Boolean from string
 Transforms strings into boolean values
 ```
 "boolean_from_string": {
@@ -122,7 +122,7 @@ Transforms strings into boolean values
 }
 ```
 
-####Replace string
+#### Replace string
 Replaces a subtext of a string
 ```
 "replace_string": {
@@ -131,7 +131,7 @@ Replaces a subtext of a string
 }
 ```
 
-####Number from string
+#### Number from string
 Transforms strings into numeric values
 ```
 "number_from_string": {
@@ -140,7 +140,7 @@ Transforms strings into numeric values
 }
 ```
 
-####Change date format
+#### Change date format
 Transforms one date format into another
 ```
 "change_date_format": {
