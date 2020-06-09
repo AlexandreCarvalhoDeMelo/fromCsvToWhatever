@@ -70,7 +70,7 @@ php Caster.php input.csv
 * Csv - Reads csv file from file system
 * HttpCsv - Reads csv format from a url
 
-###Mapping configuration
+### Mapping configuration
 Simple transformation
 ```
 {
