@@ -1,4 +1,4 @@
-# CastorCaster
+# FromCsvToWhatever
 ##### A open source stream transformer with a inferiority complex (:
 
 Features: 
